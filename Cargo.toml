@@ -1,0 +1,10 @@
+[package]
+name = "rusp-skeleton"
+version = "0.1.0"
+authors = ["arnaud.fernandes <arnaud.fernandes@laposte.net>"]
+
+[dependencies]
+nickel = "*"
+
+[dependencies.rusp]
+path = "../rusty-spear"

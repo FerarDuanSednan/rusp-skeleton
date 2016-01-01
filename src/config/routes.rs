@@ -1,10 +1,11 @@
 
-use controllers::web_controller;
+use controllers::*;
 
 use nickel::{Nickel, Router, HttpRouter};
 
-pub fn build() -> Router {
+pub fn build<'a>() -> Router {
     let mut router = Nickel::router();
+
     router.get("/", web_controller::index);
     router
 }
